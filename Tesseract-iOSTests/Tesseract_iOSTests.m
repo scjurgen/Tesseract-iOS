@@ -13,7 +13,7 @@
 {
     TesseractWrapper *tesseract;
 }
-
+ 
 @end
 
 @implementation Tesseract_iOSTests
@@ -47,6 +47,7 @@
     [self runSingleImage:@"Hola caracola!" imageName:@"HolaCaracola.tiff"];
     [self runSingleImage:@"Hola caracola!" imageName:@"HolaCaracola2.tiff"];
     [self runSingleImage:@"Hola caracola!" imageName:@"HolaCaracola3.tiff"];
+    [self runSingleImage:@"gjpqy_" imageName:@"gjpqy_.tiff"];
 }
 
 @end
