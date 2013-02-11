@@ -38,19 +38,30 @@
 
 - (void)configureView
 {
-    // Update the user interface for the detail item.
-
-    if (self.detailItem) {
-        self.detailDescriptionLabel.text = [[self.detailItem valueForKey:@"timeStamp"] description];
+    if (self.resultTextView)
+    {
+        self.resultTextView.text = @"analysis...";
+        UIImage *image=[UIImage imageNamed:[[self.detailItem valueForKey:@"name"] description]];
+        self.imageSampleView.image = image;
+        
+        dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND,0);
+        
+        dispatch_async(queue, ^{
+            NSString *result = [tesseract analyseImage:image];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                self.resultTextView.text = result;
+            });
+        });
     }
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    tesseract = [[TesseractWrapper alloc] initEngineWithLanguage:@"eng"];
 	// Do any additional setup after loading the view, typically from a nib.
     [self configureView];
-    tesseract = [[TesseractWrapper alloc] initEngineWithLanguage:@"eng"];
+
 }
 
 - (void)didReceiveMemoryWarning

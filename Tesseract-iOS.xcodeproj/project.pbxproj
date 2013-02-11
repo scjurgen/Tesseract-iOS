@@ -57,6 +57,10 @@
 		3873F56416C7E7F9006971EE /* TesseractWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3873F56216C7E7F9006971EE /* TesseractWrapper.mm */; };
 		3873F56516C7ECEC006971EE /* libstdc++.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3873F50116C7E551006971EE /* libstdc++.6.dylib */; };
 		3873F56616C7EE3D006971EE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3873F4BE16C7E4F8006971EE /* CoreGraphics.framework */; };
+		3878361716C8E3A8006DCBB4 /* StorageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3878361616C8E3A8006DCBB4 /* StorageManager.m */; };
+		3878361A16C8EB39006DCBB4 /* Tesseract_iOS.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 3878361916C8EB39006DCBB4 /* Tesseract_iOS.sqlite */; };
+		3898DBD816C8F174008DDB60 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3898DBD716C8F174008DDB60 /* libsqlite3.dylib */; };
+		3898DBD916C8F1AC008DDB60 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3898DBD716C8F174008DDB60 /* libsqlite3.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -160,6 +164,12 @@
 		3873F55416C7E7CE006971EE /* HolaCaracolaBoxes.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = HolaCaracolaBoxes.tiff; sourceTree = "<group>"; };
 		3873F56116C7E7F9006971EE /* TesseractWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TesseractWrapper.h; sourceTree = "<group>"; };
 		3873F56216C7E7F9006971EE /* TesseractWrapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TesseractWrapper.mm; sourceTree = "<group>"; };
+		3878361316C8D78A006DCBB4 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		3878361416C8D78A006DCBB4 /* install_newest.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = install_newest.txt; sourceTree = "<group>"; };
+		3878361516C8E3A7006DCBB4 /* StorageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StorageManager.h; sourceTree = "<group>"; };
+		3878361616C8E3A8006DCBB4 /* StorageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StorageManager.m; sourceTree = "<group>"; };
+		3878361916C8EB39006DCBB4 /* Tesseract_iOS.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = Tesseract_iOS.sqlite; sourceTree = "<group>"; };
+		3898DBD716C8F174008DDB60 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +177,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3898DBD816C8F174008DDB60 /* libsqlite3.dylib in Frameworks */,
 				3873F50216C7E551006971EE /* libstdc++.6.dylib in Frameworks */,
 				3873F4BB16C7E4F8006971EE /* UIKit.framework in Frameworks */,
 				3873F4BD16C7E4F8006971EE /* Foundation.framework in Frameworks */,
@@ -181,6 +192,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3898DBD916C8F1AC008DDB60 /* libsqlite3.dylib in Frameworks */,
 				3873F56616C7EE3D006971EE /* CoreGraphics.framework in Frameworks */,
 				3873F56516C7ECEC006971EE /* libstdc++.6.dylib in Frameworks */,
 				3873F4EA16C7E4F8006971EE /* SenTestingKit.framework in Frameworks */,
@@ -198,6 +210,8 @@
 		3873F4AE16C7E4F8006971EE = {
 			isa = PBXGroup;
 			children = (
+				3878361316C8D78A006DCBB4 /* README.md */,
+				3878361416C8D78A006DCBB4 /* install_newest.txt */,
 				3873F4C216C7E4F8006971EE /* Tesseract-iOS */,
 				3873F4F016C7E4F8006971EE /* Tesseract-iOSTests */,
 				3873F4B916C7E4F8006971EE /* Frameworks */,
@@ -219,6 +233,7 @@
 			children = (
 				3873F50316C7E567006971EE /* Tesseract */,
 				3873F50116C7E551006971EE /* libstdc++.6.dylib */,
+				3898DBD716C8F174008DDB60 /* libsqlite3.dylib */,
 				3873F4BA16C7E4F8006971EE /* UIKit.framework */,
 				3873F4BC16C7E4F8006971EE /* Foundation.framework */,
 				3873F4BE16C7E4F8006971EE /* CoreGraphics.framework */,
@@ -231,9 +246,9 @@
 		3873F4C216C7E4F8006971EE /* Tesseract-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				3878361816C8E3B2006DCBB4 /* Datamodel */,
 				3873F56116C7E7F9006971EE /* TesseractWrapper.h */,
 				3873F56216C7E7F9006971EE /* TesseractWrapper.mm */,
-				3873F53E16C7E5B1006971EE /* Assets */,
 				3873F4CB16C7E4F8006971EE /* AppDelegate.h */,
 				3873F4CC16C7E4F8006971EE /* AppDelegate.m */,
 				3873F4D416C7E4F8006971EE /* MainStoryboard_iPhone.storyboard */,
@@ -242,7 +257,7 @@
 				3873F4DE16C7E4F8006971EE /* MasterViewController.m */,
 				3873F4E016C7E4F8006971EE /* DetailViewController.h */,
 				3873F4E116C7E4F8006971EE /* DetailViewController.m */,
-				3873F4DA16C7E4F8006971EE /* Tesseract_iOS.xcdatamodeld */,
+				3873F53E16C7E5B1006971EE /* Assets */,
 				3873F4C316C7E4F8006971EE /* Supporting Files */,
 			);
 			path = "Tesseract-iOS";
@@ -373,6 +388,7 @@
 		3873F53E16C7E5B1006971EE /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				3878361916C8EB39006DCBB4 /* Tesseract_iOS.sqlite */,
 				3873F54F16C7E7CD006971EE /* gjpqy_.tiff */,
 				3873F55016C7E7CD006971EE /* gjpqy_2.tiff */,
 				3873F55116C7E7CD006971EE /* HolaCaracola.tiff */,
@@ -385,6 +401,16 @@
 				3873F54316C7E5B1006971EE /* text3_times.png */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		3878361816C8E3B2006DCBB4 /* Datamodel */ = {
+			isa = PBXGroup;
+			children = (
+				3873F4DA16C7E4F8006971EE /* Tesseract_iOS.xcdatamodeld */,
+				3878361516C8E3A7006DCBB4 /* StorageManager.h */,
+				3878361616C8E3A8006DCBB4 /* StorageManager.m */,
+			);
+			name = Datamodel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -474,6 +500,7 @@
 				3873F55B16C7E7CE006971EE /* HolaCaracola2.tiff in Resources */,
 				3873F55D16C7E7CE006971EE /* HolaCaracola3.tiff in Resources */,
 				3873F55F16C7E7CE006971EE /* HolaCaracolaBoxes.tiff in Resources */,
+				3878361A16C8EB39006DCBB4 /* Tesseract_iOS.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -524,6 +551,7 @@
 				3873F4DF16C7E4F8006971EE /* MasterViewController.m in Sources */,
 				3873F4E216C7E4F8006971EE /* DetailViewController.m in Sources */,
 				3873F56316C7E7F9006971EE /* TesseractWrapper.mm in Sources */,
+				3878361716C8E3A8006DCBB4 /* StorageManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -731,6 +759,7 @@
 				3873F4FD16C7E4F8006971EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3873F4FE16C7E4F8006971EE /* Build configuration list for PBXNativeTarget "Tesseract-iOSTests" */ = {
 			isa = XCConfigurationList;
@@ -739,6 +768,7 @@
 				3873F50016C7E4F8006971EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

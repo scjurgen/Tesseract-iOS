@@ -1,11 +1,10 @@
 
-http://code.google.com/p/tesseract-ocr/
-see also http://leptonica.com/ for some of the image processing parts (if needed)
 
 some hints:
 
 you will need on the device only the traineddata files for the language of your choice
-you will need to add the libstdc++.6.0.9.dylib (or more recent version).
+you will need to add the libstdc++.6.dylib (or more recent versions).
+you will need CoreGraphics.framework
 
 
 

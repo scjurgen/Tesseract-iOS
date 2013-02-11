@@ -48,6 +48,7 @@
     [self runSingleImage:@"Hola caracola!" imageName:@"HolaCaracola2.tiff"];
     [self runSingleImage:@"Hola caracola!" imageName:@"HolaCaracola3.tiff"];
     [self runSingleImage:@"gjpqy_" imageName:@"gjpqy_.tiff"];
+    [self runSingleImage:@"gjpqy_" imageName:@"gjpqy_2.tiff"];
 }
 
 @end

@@ -52,14 +52,18 @@
     return self;
 }
 
+#pragma - mark analyse
 
+/**
+ if you want to analyse more than 1 region you need to retain the pixels
+ */
 - (NSString*)analyseImage:(UIImage *)image
 {
     @synchronized(self)
     {
         CGSize size = [image size];
         int width = size.width;
-        int baseWidth=width* sizeof(uint32_t);
+        int baseWidth = width * sizeof(uint32_t);
         int height = size.height;
         
         if (width <= 0 || height <= 0)
