@@ -19,11 +19,11 @@ It contains a classic Master Detail Controller with Core-Data, SenUnitTest
 Fundaments
 ----------
 
-This work is based on Tesseract and Leptonic:
-http://code.google.com/p/tesseract-ocr/
-http://leptonica.com/ for some of the image processing parts.
+This work is based on Tesseract http://code.google.com/p/tesseract-ocr/ and 
+Leptonic http://leptonica.com/ for some of the image processing parts.
 
 See also install_newest.txt to understand what to do if you want to compile the 2 libraries on your own (it is not necessarily a trivial task and might anytime break as it envolves a lot of stuff to work together).
+You might also want to do this to streamline the libs.
 
 Unittests
 ---------
