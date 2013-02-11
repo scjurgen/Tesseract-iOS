@@ -2,7 +2,7 @@
 
 some hints:
 
-you will need on the device only the traineddata files for the language of your choice
+you will need on the device the traineddata files (and only them) for the language of your choice
 you will need to add the libstdc++.6.dylib (or more recent versions).
 you will need CoreGraphics.framework
 
@@ -31,7 +31,7 @@ create build script:
 touch build.sh
 chmod u+x build.sh
 
-any editor and insert into build.sh:
+any editor and insert into build.sh (update from https://dl.dropbox.com/u/1745859/Blog/tesseract/ios60_tesseract302_leptonica_169/build_dependencies.sh):
 
 #!/bin/sh
 # build.sh
