@@ -15,6 +15,7 @@ serve as a jump board to create your own OCR aware iOS app.
 
 It contains a classic Master Detail Controller with Core-Data, SenUnitTest
 
+Also note that the analysis on the phone is slow for bigger images.
 
 Fundaments
 ----------

@@ -674,6 +674,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tesseract-iOS/Tesseract-iOS-Prefix.pch";
 				INFOPLIST_FILE = "Tesseract-iOS/Tesseract-iOS-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Tesseract/lib\"",
@@ -689,6 +690,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tesseract-iOS/Tesseract-iOS-Prefix.pch";
 				INFOPLIST_FILE = "Tesseract-iOS/Tesseract-iOS-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Tesseract/lib\"",
